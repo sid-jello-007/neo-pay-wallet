@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neo Pay: a digital wallet for a new city</title>
+  <meta name="description" content="Product case study: research, roadmap and the customer and merchant journeys of the Neo Pay digital wallet." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Crect width=%2716%27 height=%2716%27 rx=%274%27 fill=%27%23c9a227%27/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <b>Neo Pay</b>
+    <nav><a href="#thinking">Thinking</a><a href="#research">Research</a><a href="#roadmap">Roadmap</a><a href="#journeys">Journeys</a><a href="#decisions">Decisions</a><a href="https://github.com/sid-jello-007/neo-pay-wallet">GitHub</a></nav>
+  </div></header>
+
+  <section class="hero"><div class="wrap">
+    <div class="eyebrow">Product case study</div>
+    <h1>Neo Pay: a digital wallet<br>for a new city</h1>
+    <p class="lede">A customer wallet, a merchant app and a back office for the teams running them, designed together for a city being built from scratch, with regulation in the first release.</p>
+    <div class="chips"><span class="chip">Fintech · payments</span><span class="chip">Customer + merchant + back office</span><span class="chip">KYC / KYB and risk</span><span class="chip">Outcome based roadmap</span><span class="chip">Mobile journeys</span></div>
+    <a class="cta" href="#journeys">Walk through the app</a><a class="cta ghost" href="#research">See the research</a>
+    <p class="disclaimer">"Neo" is a renamed stand-in for the real client. The research artefacts and screens are recreations of my project work with client and product names changed.</p>
+  </div></section>
+
+  <section id="thinking"><div class="wrap">
+    <div class="eyebrow">The thinking</div>
+    <h2 class="sec">Three products, one platform, regulated from day one</h2>
+    <p class="lede">Neo wanted its own payments layer: a mobile wallet residents and visitors use every day, a business app local merchants use to get paid, and back office tools for operations, compliance and support. The work moved through three layers, each feeding the next.</p>
+    <div class="flow"><span class="s">1. Map every capability</span><span class="a">→</span><span class="s">2. Sequence by outcome</span><span class="a">→</span><span class="s">3. Design the journeys</span></div>
+    <div class="grid3">
+      <div class="card"><h3>Three products, not one</h3><p>Customer app, merchant app and back office each have their own outcomes. If operations can't reconcile payments, letting merchants accept them is pointless.</p></div>
+      <div class="card"><h3>Regulation from day one</h3><p>Digital KYC, KYB, sanctions screening, risk based limits and fraud rules had to be in the first release, not bolted on later.</p></div>
+      <div class="card"><h3>A city that doesn't exist yet</h3><p>Few merchants, patchy connectivity on sites still under construction, and a population that changes every month. Offline payments and fast onboarding mattered more than usual.</p></div>
+    </div>
+  </div></section>
+
+  <section id="research"><div class="wrap">
+    <div class="eyebrow">Research · capability map</div>
+    <h2 class="sec">Everything the platform needed, colour coded by release</h2>
+    <p class="lede">Before choosing what to build first, I mapped the full scope for the merchant side and the customer side. Each capability is tagged with the planning increment it lands in. Click a colour to see one release on its own, or click any node to expand it.</p>
+    <div class="legend">
+      <button data-c="g" aria-pressed="false"><i style="background:var(--g)"></i>Green: PI 1 Jan</button>
+      <button data-c="o" aria-pressed="false"><i style="background:var(--o)"></i>Orange: PI 2 April</button>
+      <button data-c="b" aria-pressed="false"><i style="background:var(--b)"></i>Blue: PI 3 July</button>
+      <button data-c="p" aria-pressed="false"><i style="background:var(--p)"></i>Purple: MVP Oct</button>
+      <button id="mm-expand">Expand all</button>
+    </div>
+    <div class="mm-note">Launch Jan 2023</div>
+    <div class="mm"><div class="tree" id="mm-business"></div><div class="tree" id="mm-pay"></div></div>
+  </div></section>
+
+  <section id="roadmap"><div class="wrap">
+    <div class="eyebrow">Roadmap 2022</div>
+    <h2 class="sec">Outcomes for customers, merchants and colleagues, every increment</h2>
+    <p class="lede">Each planning increment states what each user group can do that they couldn't before, the features that deliver it, and the platform capabilities underneath. Back office readiness moves in step with the apps.</p>
+    <div class="tabs" id="rm-tabs" role="tablist"></div>
+    <div id="rm-body"></div>
+  </div></section>
+
+  <section id="journeys"><div class="wrap">
+    <div class="eyebrow">The experience</div>
+    <h2 class="sec">Walk through the wallet, screen by screen</h2>
+    <p class="lede" id="j-intro"></p>
+    <div class="tabs jtabs" role="tablist"><button data-j="customer" role="tab">Customer app</button><button data-j="merchant" role="tab">Merchant app</button></div>
+    <div class="viewer">
+      <div class="phone"><div class="scr" id="phone"></div></div>
+      <div class="ann">
+        <div class="phases" id="phases"></div>
+        <div class="phase" id="a-phase"></div>
+        <h3 id="a-name"></h3>
+        <p class="why" id="a-why"></p>
+        <div class="ctrl"><button id="prev">← Back</button><button id="next" class="pri">Next →</button><span class="count" id="a-count"></span></div>
+        <p class="mm-note">Tip: use the arrow keys, or jump to any screen below.</p>
+      </div>
+    </div>
+    <div class="thumbs" id="thumbs"></div>
+  </div></section>
+
+  <section id="decisions"><div class="wrap">
+    <div class="eyebrow">Decisions and lessons</div>
+    <h2 class="sec">What shaped the product</h2>
+    <table class="dec">
+      <tr><th>Decision</th><th>Why</th></tr>
+      <tr><td>Outcome based roadmap across three user groups</td><td>Kept back office readiness in lockstep with app features</td></tr>
+      <tr><td>Risk score drives limits, not a pass/fail gate</td><td>Users get in fast with lower limits; verification unlocks more</td></tr>
+      <tr><td>Identity proven via the OTP linked to the national ID</td><td>Proves the person owns the identity without a branch visit or document upload</td></tr>
+      <tr><td>Offline QR payments in the second increment</td><td>Connectivity on a city under construction couldn't be assumed</td></tr>
+      <tr><td>Save and resume for merchant applications</td><td>KYB needs documents most owners don't have to hand</td></tr>
+      <tr><td>Maker / checker for compliance exceptions</td><td>Auditability that risk and compliance required</td></tr>
+      <tr><td>Cashier roles and a static QR per cashier</td><td>Matches how real shops run tills and shifts</td></tr>
+    </table>
+    <div class="grid3">
+      <div class="card"><h3>Back office is the critical path</h3><p>Reconciliation, settlement and exception handling decide the launch date, not the app.</p></div>
+      <div class="card"><h3>Compliance is a design partner</h3><p>Bringing them into journey design early turned "no" into "yes, with these limits".</p></div>
+      <div class="card"><h3>Sequence by risk, not excitement</h3><p>Split bills and offers are fun; limits, fraud rules and refunds make a wallet safe to scale.</p></div>
+    </div>
+    <p class="mm-note" style="margin-top:28px">Built by <a href="https://github.com/sid-jello-007">Siddharth Narayanan</a>. Source on <a href="https://github.com/sid-jello-007/neo-pay-wallet">GitHub</a>.</p>
+  </div></section>
+
+  <script src="assets/ui.js"></script>
+  <script src="assets/journeys.js"></script>
+  <script src="assets/research.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -2,9 +2,20 @@
 
 **Product case study: how I scoped, sequenced and designed a consumer and merchant digital wallet, from capability map to quarterly roadmap to onboarding journeys, inside a regulated payments environment.**
 
-> "Neo" is a renamed stand-in for the real client. Everything here is my own write-up and redrawn diagrams. No client documents, designs, data or results are reproduced.
+> "Neo" is a renamed stand-in for the real client. The research artefacts and screens are recreations of my project work with client and product names changed.
 
-[Roadmap](docs/roadmap.md) · [Capability map](docs/capability-map.md) · [Onboarding, KYC and risk](docs/onboarding-and-risk.md) · [Journeys](docs/journeys.md)
+### ▶ [Open the interactive case study](https://sid-jello-007.github.io/neo-pay-wallet/)
+
+Walk through all 50 customer and merchant app screens with the reasoning behind each one, explore the capability mind map by release, and browse the 2022 roadmap increment by increment.
+
+| | |
+|---|---|
+| [**Customer journey**](https://sid-jello-007.github.io/neo-pay-wallet/#customer-1) | 17 screens from first launch to a funded wallet |
+| [**Merchant journey**](https://sid-jello-007.github.io/neo-pay-wallet/#merchant-1) | 33 screens from application to getting paid |
+| [**Capability mind map**](https://sid-jello-007.github.io/neo-pay-wallet/#research) | Every capability, colour coded by release |
+| [**Roadmap 2022**](https://sid-jello-007.github.io/neo-pay-wallet/#roadmap) | Customer, merchant and colleague outcomes per increment |
+
+Written summaries: [Roadmap](docs/roadmap.md) · [Capability map](docs/capability-map.md) · [Onboarding, KYC and risk](docs/onboarding-and-risk.md) · [Journeys](docs/journeys.md)
 
 ## Context
 
@@ -97,3 +108,7 @@ The key product decision: **the risk score sets the customer's limits** (daily, 
 ## Skills shown
 
 Discovery and capability mapping · outcome based roadmapping in quarterly planning increments · KYC/KYB and risk design · payments (QR, wallet, cards, settlement) · journey design with UX · backlog writing · stakeholder management across product, compliance and engineering
+
+## How the interactive site is built
+
+Plain HTML, CSS and JavaScript, no build step, served by GitHub Pages. Each app screen is described as data (`assets/journeys.js`) and drawn by a small component kit (`assets/ui.js`), so every screen stays editable as text.
